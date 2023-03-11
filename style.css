@@ -1,0 +1,277 @@
+@charset 'utf-8';
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear{clear: both;}
+
+.w33{
+	float: left;
+	width: 33.33%;
+}
+
+.w50{
+	float: left;
+	width: 50%;
+}
+
+.w100{
+	width: 100%;
+	float: left;
+}
+
+header{
+	position: absolute;
+	background-color: rgba(80, 81, 101, 0.2);
+	width: 100%;
+	text-align: center;
+}
+
+header nav{
+	padding: 15px 0px;
+	
+}
+
+header nav a{
+	text-transform: uppercase;
+	margin: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: normal;
+}
+
+header nav a:hover{
+	text-decoration: underline;
+}
+
+section img{
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section p{
+	background-color: rgba(80, 81, 101, 0.2);
+	text-align: center;
+	width: 100%;
+	margin-top: -100px;
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+}
+
+/*section imagem de fundo*/
+
+section img{
+	max-width: 100%;
+}
+
+/*habilidades*/
+
+section#habilidades .flex-container{
+		display: flex;
+		height: 700px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 120px;
+}
+
+section#habilidades .box1, .box2{
+	margin: 50px;
+}
+
+section#habilidades h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+section#habilidades ul {
+	list-style-type: none;
+}
+
+section#habilidades li {
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+section#habilidades .box2 h2{
+	line-height: 5px;
+	padding-bottom: 35.9px;
+	margin-top: -80px;
+}
+
+section#informacoes .flex-container{
+	display: flex;
+	height: 750px;
+	background-color: #505365;
+	width: 100%;
+}
+
+section#informacoes .box{
+	border: none;
+	width: 750px;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+section#informacoes .box1{
+	border: none;
+	height: 300px;
+	width: 300px;
+	justify-content: center;
+	align-self: center;
+}
+
+section#informacoes .box2{
+/*	border: 2px solid blue;*/
+	height: 250px;
+	width: 400px;
+	margin: -80px 340px;
+}
+
+section#informacoes h1 {
+	text-align: left;
+	padding-bottom: 20px;
+	width: 300px;
+	font-size: 2.5em;
+	color: #ffffff;
+}
+
+section#informacoes button {
+	width: 300px;
+	border-radius: 50px;
+	border: none;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+footer .flex-container{
+	background-color: lightgray;
+	color: black;
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+footer h2 {
+	margin-right: 50px;
+	font-weight: normal;
+}
+
+footer p{
+	float: left;
+	text-transform: uppercase;
+	margin: 0 30px;
+}
+
+footer#footer2 i {
+	font-size: 25px;
+	margin: 5px;
+	margin-top: -190px;
+}
+
+/*----------- responsivo -----------*/
+
+/*---------------- 821px ---------------- */
+
+@media screen and (max-width: 821px){
+
+	section#habilidades .flex-container{
+		flex-direction: column;
+	}
+
+	section#habilidades .box1 h2{
+		text-align: center;
+	}
+
+	section#habilidades .box2 h2{
+		text-align: center;
+	}
+
+	section#informacoes .box1{
+		flex-direction: column;
+		margin: auto;
+	}
+
+	section#informacoes .box2{
+		flex-direction: column;
+		margin: auto;
+	}
+
+	footer .flex-container{
+		flex-direction: column;
+		margin: auto;
+	}
+
+	footer .flex-container h2 {
+		padding-bottom: 10px;
+		margin: 0 auto;
+	}
+
+
+	footer .flex-container p {
+		padding: 10px;
+	}
+}
+
+/*---------------- 425px ---------------- */
+
+@media screen and (max-width: 425px){
+	header nav{
+		padding: 5px 0;
+	}
+
+	header nav a {
+		display: block;
+		font-size: 16px;
+	}
+
+	section p {
+		font-size: 20px;
+		margin-top: -30px;
+	}
+}
+
+/*---------------- 375px ---------------- */
+
+@media screen and (max-width: 375px){
+	header nav{
+		padding: 5px 0;
+	}
+
+	header nav a {
+		display: block;
+		font-size: 16px;
+	}
+
+	section p {
+		font-size: 20px;
+		margin-top: -30px;
+	}
+
+	section#informacoes .flex-container{
+		margin-top: 10px;
+    }
+
+	section#informacoes .box {
+		border: none;
+		width: 750px;
+		height: 400px;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+    }
+
+	section#informacoes .box2 {
+		width: 90%;
+	}
+}
